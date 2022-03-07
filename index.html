@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calculadora">
+        <h3>Calculadora IMC</h3>
+        <label for="">
+          Seleccione su sexo
+          <select>
+            <option>Femenino</option>
+            <option>Masculino</option>
+          </select>
+        </label>
+
+        <input type="number" placeholder="Ingrese su edad" class="inputs" /><br />
+        <input
+          type="number"
+          placeholder="Ingrese Peso en kilogramos"
+          class="inputs"
+          id="weight"
+        /><br />
+        <input
+          type="number"
+          placeholder="Ingrese su Estatura en centimetros"
+          class="inputs"
+          id="height"
+        /><br />
+        <button id="boton">Calcular</button>
+      </div>
+      <div class="tarjeta" id="tarjeta">
+        <h3>Su IMC es:</h3>
+      </div>
+      <div>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Caracteristicas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Por debajo de 18.5 "Por debajo del peso"</td>
+            </tr>
+            <tr>
+              <td>18.5 a 24.9 "Saludable"</td>
+            </tr>
+            <tr>
+              <td>25.0 a 29.9 "Con sobrepeso"</td>
+            </tr>
+            <tr>
+              <td>30.0 a 39.9 "Obeso"</td>
+            </tr>
+            <td>Más de 40 "Obesidad extrema o de alto riesgo"</td>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
